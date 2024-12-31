@@ -1,0 +1,32 @@
+# Ignore Android Studio project files
+.idea/
+*.iml
+*.log
+local.properties
+*.keystore
+*.jks
+
+# Gradle files
+.gradle/
+**/build/
+app/build/
+build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Generated files
+captures/
+.externalNativeBuild
+.cxx/
+
+# APK and log files
+*.apk
+*.ap_
+*.log
+
+# Ignore crashlytics and similar tools
+fabric.properties
+crashlytics.properties

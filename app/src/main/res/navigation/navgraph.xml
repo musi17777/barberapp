@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/openingFragment2">
+    <fragment
+        android:id="@+id/openingFragment2"
+        android:name="com.example.barberapp.fragment.OpeningFragment"
+        android:label="fragment_opening"
+        tools:layout="@layout/fragment_opening" >
+        <action
+            android:id="@+id/action_openingFragment2_to_clientSignUp"
+            app:destination="@id/clientSignUp" />
+        <action
+            android:id="@+id/action_openingFragment2_to_clientLogin"
+            app:destination="@id/clientLogin" />
+        <action
+            android:id="@+id/action_openingFragment2_to_barberLogin2"
+            app:destination="@id/barberLogin2" />
+        <action
+            android:id="@+id/action_openingFragment2_to_barberSignUp"
+            app:destination="@id/barberSignUp" />
+    </fragment>
+    <fragment
+        android:id="@+id/barberLogin2"
+        android:name="com.example.barberapp.fragment.BarberLogin"
+        android:label="fragment_barber_login"
+        tools:layout="@layout/fragment_barber_login" />
+    <fragment
+        android:id="@+id/barberSignUp"
+        android:name="com.example.barberapp.fragment.BarberSignUp"
+        android:label="fragment_barber_sign_up"
+        tools:layout="@layout/fragment_barber_sign_up" >
+        <action
+            android:id="@+id/action_barberSignUp_to_barberLogin2"
+            app:destination="@id/barberLogin2" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientLogin"
+        android:name="com.example.barberapp.fragment.ClientLogin"
+        android:label="fragment_client_login"
+        tools:layout="@layout/fragment_client_login" />
+    <fragment
+        android:id="@+id/clientSignUp"
+        android:name="com.example.barberapp.fragment.ClientSignUp"
+        android:label="fragment_client_sign_up"
+        tools:layout="@layout/fragment_client_sign_up" >
+        <action
+            android:id="@+id/action_clientSignUp_to_clientLogin"
+            app:destination="@id/clientLogin" />
+    </fragment>
+</navigation>

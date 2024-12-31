@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/shape1">
+
+
+    <TextView
+        android:id="@+id/barberSignUpTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Barber Sign Up"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="20dp"
+        android:gravity="center" />
+
+
+    <EditText
+        android:id="@+id/barberBusinessNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Business Name"
+        android:inputType="text"
+        android:layout_marginBottom="20dp"
+        android:padding="15dp"
+        android:backgroundTint="#8B4513"
+        android:textColorHint="#BDBDBD" />
+
+
+    <EditText
+        android:id="@+id/barberAddressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Address"
+        android:inputType="text"
+        android:layout_marginBottom="20dp"
+        android:padding="15dp"
+        android:backgroundTint="#8B4513"
+        android:textColorHint="#BDBDBD" />
+
+
+    <EditText
+        android:id="@+id/barberSignUpEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="20dp"
+        android:padding="15dp"
+        android:backgroundTint="#8B4513"
+        android:textColorHint="#BDBDBD" />
+
+    <!-- שדה טלפון -->
+    <EditText
+        android:id="@+id/barberPhoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:layout_marginBottom="20dp"
+        android:padding="15dp"
+        android:backgroundTint="#8B4513"
+        android:textColorHint="#BDBDBD" />
+
+    <EditText
+        android:id="@+id/barberSignUpPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="20dp"
+        android:padding="15dp"
+        android:backgroundTint="#8B4513"
+        android:textColorHint="#BDBDBD" />
+
+
+    <EditText
+        android:id="@+id/barberConfirmPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="20dp"
+        android:padding="15dp"
+        android:backgroundTint="#8B4513"
+        android:textColorHint="#BDBDBD" />
+
+
+    <Button
+        android:id="@+id/barberSignUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#8B4513"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

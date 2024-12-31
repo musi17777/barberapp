@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/shape1">
+
+
+    <TextView
+        android:id="@+id/barberLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Barber Login"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="20dp"
+        android:gravity="center" />
+
+
+    <EditText
+        android:id="@+id/barberLoginEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:inputType="text"
+        android:layout_marginBottom="20dp"
+        android:padding="15dp"
+        android:backgroundTint="#8B4513"
+        android:textColorHint="#BDBDBD" />
+
+    <EditText
+        android:id="@+id/barberPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="20dp"
+        android:padding="15dp"
+        android:backgroundTint="#8B4513"
+        android:textColorHint="#BDBDBD" />
+
+
+    <Button
+        android:id="@+id/barberLoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#8B4513"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
