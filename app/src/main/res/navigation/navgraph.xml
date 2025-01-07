@@ -26,7 +26,11 @@
         android:id="@+id/barberLogin2"
         android:name="com.example.barberapp.fragment.BarberLogin"
         android:label="fragment_barber_login"
-        tools:layout="@layout/fragment_barber_login" />
+        tools:layout="@layout/fragment_barber_login" >
+        <action
+            android:id="@+id/action_barberLogin2_to_barberSchedule"
+            app:destination="@id/barberSchedule" />
+    </fragment>
     <fragment
         android:id="@+id/barberSignUp"
         android:name="com.example.barberapp.fragment.BarberSignUp"
@@ -40,7 +44,11 @@
         android:id="@+id/clientLogin"
         android:name="com.example.barberapp.fragment.ClientLogin"
         android:label="fragment_client_login"
-        tools:layout="@layout/fragment_client_login" />
+        tools:layout="@layout/fragment_client_login" >
+        <action
+            android:id="@+id/action_clientLogin_to_clientAppointment"
+            app:destination="@id/clientAppointment" />
+    </fragment>
     <fragment
         android:id="@+id/clientSignUp"
         android:name="com.example.barberapp.fragment.ClientSignUp"
@@ -50,4 +58,12 @@
             android:id="@+id/action_clientSignUp_to_clientLogin"
             app:destination="@id/clientLogin" />
     </fragment>
+    <fragment
+        android:id="@+id/barberSchedule"
+        android:name="com.example.barberapp.fragment.BarberSchedule"
+        android:label="BarberSchedule" />
+    <fragment
+        android:id="@+id/clientAppointment"
+        android:name="com.example.barberapp.fragment.ClientAppointment"
+        android:label="ClientAppointment" />
 </navigation>
