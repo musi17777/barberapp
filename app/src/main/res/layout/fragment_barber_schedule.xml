@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/shape1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/barberScheduleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Schedule"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+
+        <Button
+            android:id="@+id/blockDayButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Block Day"
+            android:backgroundTint="#8B4513"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
+
+
+        <Button
+            android:id="@+id/unblockTimeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unblock Time"
+            android:backgroundTint="#FF4500"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+
+        <TextView
+            android:id="@+id/futureAppointmentsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Future Appointments"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
+
+
+        <ListView
+            android:id="@+id/futureAppointmentsListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:dividerHeight="1dp"
+            android:divider="#CCCCCC"
+            android:background="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

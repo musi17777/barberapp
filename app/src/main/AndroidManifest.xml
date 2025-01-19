@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Barberapp"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@layout/item_appointment" />
+
         <activity
             android:name=".activitys.MainActivity"
             android:exported="true">
